@@ -1,0 +1,67 @@
+/* * {box-sizing: border-box;} */
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0;
+}
+@media screen and (max-width: 900px) {
+	main {width: 95%;}
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    border: none;
+}
+.cards div {flex: 1 30%;}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(166, 191, 204, 0.199);
+    border: 1px solid rgb(10, 10, 8);
+}
+.card-image {
+    margin: 0;
+}
+.card-image img {
+    max-width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+.card-text {
+    justify-self: flex-start;
+    margin: 0;
+    padding: 1rem;
+}
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+button {
+    margin: 10px;
+	padding: 10px 20px;
+	font-size: 0.85rem;
+	color: white;
+	background-image: radial-gradient(circle, #cc8400, #c20000);
+	background-size: 400% 100%;
+	background-position: top right;
+	border: none;
+	border-radius: 10px;
+	transition: all .4s ease-in-out;
+}
+button:hover {
+	background-image: radial-gradient(circle, #cc8400, #c20000);
+	background-position: center;
+	cursor: pointer;
+}
